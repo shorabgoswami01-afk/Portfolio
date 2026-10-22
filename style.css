@@ -1,0 +1,454 @@
+/* ========================================
+   RESET
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   BODY
+======================================== */
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: #f3efe6;
+    color: #171717;
+    line-height: 1.7;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+header {
+    position: relative;
+    background-color: #171717;
+    color: #f3efe6;
+    padding: 90px 8%;
+    text-align: left;
+    border-bottom: 8px solid #d85b2a;
+}
+
+header .toggle {
+    position: absolute;
+    top: 24px;
+    right: 8%;
+}
+
+header h1 {
+    font-size: 64px;
+    font-weight: normal;
+    letter-spacing: -2px;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+header h1:hover {
+    color: #e99570;
+}
+
+header p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #e5b49d;
+}
+
+
+/* ========================================
+   MAIN
+======================================== */
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 70px 8%;
+}
+
+
+/* ========================================
+   SECTIONS
+======================================== */
+
+section {
+    background-color: #f3efe6;
+    padding: 0 0 55px 0;
+    margin-bottom: 55px;
+    border-bottom: 2px solid #171717;
+}
+
+
+/* ========================================
+   SECTION HEADINGS
+======================================== */
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #d85b2a;
+    margin-bottom: 22px;
+    padding: 0;
+}
+
+
+/* ========================================
+   ABOUT
+======================================== */
+
+#about p {
+    max-width: 760px;
+    font-size: 21px;
+    line-height: 1.8;
+    color: #292929;
+}
+
+
+/* ========================================
+   SKILLS
+======================================== */
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#skills li {
+    padding: 15px 0;
+    border-top: 1px solid #aaa398;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+    transition:
+        color 0.3s ease,
+        padding-left 0.3s ease;
+}
+
+#skills li:hover {
+    color: #d85b2a;
+    padding-left: 8px;
+}
+
+#skills li::before {
+    content: "→ ";
+    color: #d85b2a;
+}
+
+
+/* ========================================
+   PROJECT CARDS
+======================================== */
+
+.project {
+    background-color: #f3efe6;
+    padding: 28px 20px;
+    margin: 0;
+    border-top: 1px solid #aaa398;
+    border-left: 3px solid transparent;
+    border-radius: 0;
+
+    transition:
+        background-color 0.3s ease,
+        border-left-color 0.3s ease,
+        padding-left 0.3s ease;
+}
+
+.project:hover {
+    background-color: #e9e2d4;
+    border-left-color: #d85b2a;
+    padding-left: 30px;
+}
+
+
+/* ========================================
+   PROJECT TITLE
+======================================== */
+
+.project h3 {
+    margin-bottom: 8px;
+    color: #171717;
+    font-size: 28px;
+    font-weight: normal;
+
+    transition:
+        color 0.3s ease,
+        letter-spacing 0.3s ease;
+}
+
+.project:hover h3 {
+    color: #d85b2a;
+    letter-spacing: 0.5px;
+}
+
+
+/* ========================================
+   PROJECT DESCRIPTION
+======================================== */
+
+.project p {
+    max-width: 650px;
+    margin-bottom: 12px;
+    color: #595959;
+    font-size: 17px;
+}
+
+
+/* ========================================
+   PROJECT LINK
+======================================== */
+
+.project a {
+    display: inline-block;
+    color: #d85b2a;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.project a:hover {
+    color: #f123b4;
+    transform: translateX(6px);
+}
+
+
+/* ========================================
+   CONTACT
+======================================== */
+
+#contact p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+#contact a {
+    color: #d85b2a;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #171717;
+    text-decoration: underline;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+    background-color: #d85b2a;
+    color: #171717;
+    padding: 25px 8%;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+/* ========================================
+   FOOTER HOVER
+======================================== */
+
+footer p {
+    transition: letter-spacing 0.3s ease;
+}
+
+footer p:hover {
+    letter-spacing: 2px;
+}
+
+
+/* ========================================
+   TOGGLE SUPPORT
+   Works if your HTML has a .toggle element
+======================================== */
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 52px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.toggle input {
+    display: none;
+}
+
+.toggle-slider {
+    position: absolute;
+    inset: 0;
+    background-color: #aaa398;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-slider::before {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 3px;
+    top: 3px;
+    background-color: #f3efe6;
+    border-radius: 50%;
+
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.toggle:hover .toggle-slider {
+    background-color: #d85b2a;
+}
+
+.toggle:hover .toggle-slider::before {
+    background-color: #ffffff;
+}
+
+.toggle input:checked + .toggle-slider {
+    background-color: #171717;
+}
+
+.toggle input:checked + .toggle-slider::before {
+    transform: translateX(24px);
+    background-color: #d85b2a;
+}
+
+
+/* ========================================
+   DARK MODE
+======================================== */
+
+html.dark body {
+    background-color: #171717;
+    color: #f3efe6;
+}
+
+html.dark header {
+    background-color: #4bcbdfc8;
+    color: #f3efe6;
+}
+
+html.dark header p {
+    color: #e5b49d;
+}
+
+html.dark section {
+    background-color: #171717;
+    border-bottom-color: #f3efe6;
+}
+
+html.dark #about p {
+    color: #e8e4db;
+}
+
+html.dark #skills li {
+    border-top-color: #4d4a45;
+    color: #e8e4db;
+}
+
+html.dark .project {
+    background-color: #171717;
+    border-top-color: #4d4a45;
+}
+
+html.dark .project:hover {
+    background-color: #242424;
+}
+
+html.dark .project h3 {
+    color: #f3efe6;
+}
+
+html.dark .project p {
+    color: #c4c0b6;
+}
+
+html.dark .project a:hover,
+html.dark #contact a:hover {
+    color: #f3efe6;
+}
+
+html.dark #contact p {
+    color: #cfcbc3;
+}
+
+
+/* ========================================
+   MOBILE RESPONSIVE
+======================================== */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 60px 7%;
+    }
+
+    header .toggle {
+        top: 18px;
+        right: 7%;
+    }
+
+    header h1 {
+        font-size: 43px;
+        letter-spacing: -1px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    main {
+        padding: 50px 7%;
+    }
+
+    section {
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+    }
+
+    #about p {
+        font-size: 18px;
+    }
+
+    #skills ul {
+        grid-template-columns: 1fr;
+    }
+
+    .project h3 {
+        font-size: 24px;
+    }
+
+    .project {
+        padding: 24px 15px;
+    }
+
+    .project:hover {
+        padding-left: 22px;
+    }
+}

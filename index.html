@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shorab Goswami | Personal Profile</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script>
+        (function () {
+            var saved = localStorage.getItem("theme");
+            if (saved === "dark" || (!saved && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+                document.documentElement.classList.add("dark");
+            }
+        })();
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <label class="toggle" title="Toggle light or dark mode">
+            <input type="checkbox" id="theme-toggle" aria-label="Toggle dark mode">
+            <span class="toggle-slider"></span>
+        </label>
+
+        <h1>Shorab Goswami</h1>
+        <p>B.Tech CSE Student | Shorab Goswami</p>
+    </header>
+
+
+    <main>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+
+            <p>
+                Hello! I am Shorab Goswami, a B.Tech Computer Science and
+                Engineering student at JECRC University. I am interested in
+                programming, software development, and learning new technologies.
+                I am currently building my skills in C, Python, Java, and
+                Data Structures.
+            </p>
+        </section>
+
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+
+            <ul>
+                <li>C</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>Object-Oriented Programming</li>
+                <li>Data Structures and Algorithms</li>
+                <li>HTML & CSS</li>
+                
+            </ul>
+        </section>
+
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+
+
+            <!-- Typing Practice Project -->
+            <div class="project">
+                <h3>Typing Practice</h3>
+
+                <p>
+                    A typing practice website designed to improve typing speed
+                    and accuracy using HTML, CSS, and JavaScript.
+                </p>
+
+                <a href="typing.html" target="_blank">
+                    View Project →
+                </a>
+            </div>
+
+
+            <!-- EduStack Project -->
+            <div class="project">
+                <h3>EduStack</h3>
+
+                <p>
+                    A study-focused educational platform for organizing notes,
+                    subjects, chapters, and learning resources.
+                </p>
+
+                <a href="Shorab Goswami" target="_blank">
+                    View Project →
+                </a>
+            </div>
+
+
+            <!-- SmartBanking Project -->
+            <div class="project">
+                <h3>SmartBanking</h3>
+
+                <p>
+                    A Java-based banking project demonstrating object-oriented
+                    programming concepts.
+                </p>
+
+                <a href="Shorab Goswami" target="_blank">
+                    View Project →
+                </a>
+            </div>
+
+
+            <!-- Additional Project -->
+            <div class="project">
+                <h3>Shorab Goswami Project</h3>
+
+                <p>
+                    Shorab Goswami
+                </p>
+
+                <a href="Shorab Goswami" target="_blank">
+                    View Project →
+                </a>
+            </div>
+
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+
+            <p>
+                Email:
+                <a href="mailto:Shorab Goswami">
+                    Shorab Goswami
+                </a>
+            </p>
+
+            <p>
+                GitHub:
+                <a href="https://github.com/shorabgoswami01-afk" target="_blank">
+                    Shorab Goswami
+                </a>
+            </p>
+
+            <p>
+                LinkedIn:
+                <a href="Shorab Goswami" target="_blank">
+                    Shorab Goswami
+                </a>
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>
+            &copy; 2026 Shorab Goswami. All rights reserved.
+        </p>
+    </footer>
+
+    <script>
+        var themeToggle = document.getElementById("theme-toggle");
+        themeToggle.checked = document.documentElement.classList.contains("dark");
+
+        themeToggle.addEventListener("change", function () {
+            document.documentElement.classList.toggle("dark", themeToggle.checked);
+            localStorage.setItem("theme", themeToggle.checked ? "dark" : "light");
+        });
+    </script>
+
+</body>
+</html>
